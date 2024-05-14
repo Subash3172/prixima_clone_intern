@@ -1,0 +1,213 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+/*top nav*/
+.top-nav {
+     background-color: #ff4d29;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-nav p, .top-nav a {
+    color: white; /* Optional: sets text color to white for better contrast */
+}
+
+.social-icons a {
+    margin-left: 10px; /* Space between social icons */
+}
+/* main nav*/
+
+/* navbar */
+.top-nav {
+    background-color: #ff4d29;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-nav p {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.top-nav span,
+.top-nav i {
+    vertical-align: middle;
+}
+
+.navbar {
+    box-shadow: var(--shadow);
+}
+
+.social-icons a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: rgb(221, 2, 2);
+}
+.conditions-section{
+    margin: 20px 0;
+}
+.conditions-section a{
+   color: #fff;
+   margin: 0 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: red;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: red;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar-brand .dot {
+    color: red;
+}
+
+.btn {
+    padding: 8px 26px;
+}
+
+.btn-brand {
+    border-color: black;
+    background-color: red;
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: #d64022;
+    border-color: #d64022;
+    color: #fff;
+}
+.btn-custom-red {
+    background-color: red; /* Replace 'red' with your desired shade of red, like #ff0000 */
+    color: white; /* Set text color to white for better contrast */
+}
+
+
+
+/*slider*/
+.owl-carousel .item {
+    min-height: 500px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide1 {
+    background-image: url('/assets/img/bg_banner1.jpg');
+}
+
+.slide2 {
+    background-image: url('/assets/img/bg_banner2.jpg');
+}
+
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.owl-nav .owl-prev {
+    left: 10px;
+}
+
+.owl-nav .owl-next {
+    right: 10px;
+}
+/*about*/
+#about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.info-box {
+    display: flex;
+    align-items: start; /* Aligns items at the start vertically */
+}
+
+.icon {
+    width: 60px; /* Fixed width for icons */
+    height: auto;
+    margin-right: 15px; /* Space between icon and text */
+}
+
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+    padding: 20px; /* Equal padding around the image */
+}
+
+
+/*milestone*/
+#milestone {
+    background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), url(../assets/img/bg_banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    }
+
+/*services*/
+#services {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.service {
+    background-color: #fff;
+
+    padding:40px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px rgba(110, 108, 108, 0.315); /* Adding black box shadow */
+}
+
+.service img {
+    width: 50px; /* Adjust as needed */
+}
+
+.service h5 {
+    color: #333;
+}
+
+.service p {
+    color: #666;
+}
+
