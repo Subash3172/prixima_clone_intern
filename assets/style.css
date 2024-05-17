@@ -3,9 +3,10 @@
     margin:0;
     
 }
+
 /*top nav*/
 .top-nav {
-     background-color: #ff4d29;
+    background-color: #ff4d29;
     color: #fff;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -104,28 +105,34 @@
     color: #fff;
 }
 .btn-custom-red {
-    background-color: red; /* Replace 'red' with your desired shade of red, like #ff0000 */
-    color: white; /* Set text color to white for better contrast */
+    background-color: red; 
+    color: white; 
 }
-
 
 
 /*slider*/
 .owl-carousel .item {
-    min-height: 500px; /* Adjust height as needed */
+    height: 500px; /* Fixed height for better control */
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
-
 .slide1 {
     background-image: url('/assets/img/bg_banner1.jpg');
 }
 
 .slide2 {
     background-image: url('/assets/img/bg_banner2.jpg');
+}
+
+.slide1, .slide2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .owl-nav button {
@@ -142,6 +149,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .owl-nav .owl-prev {
@@ -152,18 +160,14 @@
     right: 10px;
 }
 
-.owl-carousel .item {
-    width: 100%; /* Set slide width to 100% */
-}
-
-.owl-carousel .owl-stage {
-    display: flex;
-    align-items: stretch;
+.owl-nav button:hover {
+    background-color: red;
 }
 
 .owl-carousel .owl-nav {
-    display: none; /* Hide navigation for a cleaner look */
+    display: block; /* Enable navigation */
 }
+
 /*about*/
 #about {
     padding-top: 80px;
@@ -314,7 +318,12 @@ img.img-fluid {
 .owl-dot.active {
     background: #666;
 }
+
 /*team*/
+#team{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 .team-member .image {
     position: relative;
 }
@@ -356,4 +365,177 @@ img.img-fluid {
     margin: 0 5px;
     color: white;
     font-size: 20px;
+}
+
+/*reviews*/
+#reviews {
+    background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(../assets/img/bg_banner1.jpg), #082032;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top:80px ;
+    padding-bottom:80px; /* Added padding for spacing */
+}
+
+#sh {
+    color: red;
+}
+
+.review-img {
+    width: 80px !important;
+    height: 80px;
+    border-radius: 100px;
+    margin: auto;
+    display: block; /* Ensure the image is centered */
+}
+
+.person {
+    text-align: center;
+    margin-bottom: 20px; /* Space between person details and review text */
+}
+
+.owl-carousel .review {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.owl-carousel .stars {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.owl-carousel .bx {
+    color: #ffdd57; /* Star color */
+}
+
+.owl-carousel .bx.bxs-quote-alt-left {
+    font-size: 30px;
+    color: #ff4d29;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.owl-carousel .owl-nav {
+    display: none; /* Hide default navigation */
+}
+
+.owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-carousel .owl-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: #ff4d29;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.owl-carousel .owl-dot.active {
+    background-color: #082032;
+}
+
+
+/*blog*/
+#blog{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.blog-post {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex; /* Use flexbox to control image and content layout */
+    height: fit-content;
+}
+
+.blog-post #blog-img {
+    
+    flex: 1; /* Make the image take up half of the container's width */
+    height: 100%; /* Ensure the image maintains its aspect ratio */
+    max-height: 50%; /* Ensure the image doesn't exceed the container's height */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    width: 350%;
+}
+
+
+
+.blog-post a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color:  #ff4d29;
+    padding: 2px 12px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.blog-post h5 {
+    position: relative;
+   
+   
+}
+
+.blog-post small {
+    text-transform: uppercase;
+    color:  #ff4d29;
+    text-decoration: underline;
+}
+.content{
+    color: #082032;
+    padding:10px;
+    text-align: center;
+    padding-right: 20px;
+    top:215px;
+
+}
+.tag{
+    top: 25px;
+}
+
+/*footer*/
+
+.footer {
+    color:white;
+    
+    background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(../assets/img/bg_banner1.jpg), #082032;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer .footer-top {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer .navbar-brand {
+    color: #fff;
+}
+
+
+.footer p {
+    color: #ADB3B9;
+}
+
+.conditions-section {
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
