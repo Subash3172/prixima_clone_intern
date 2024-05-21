@@ -240,6 +240,16 @@ img.img-fluid {
 }
 
 /*project*/
+.c{
+    color:white;
+    display:inline-flex;
+}
+.line{
+    color:red;
+    font-weight: 200;
+    text-align:left;
+    bottom:10px;
+}
 .project {
     position: relative;
     overflow: hidden;
